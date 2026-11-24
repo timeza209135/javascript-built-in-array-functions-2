@@ -374,4 +374,17 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+function noNullBills(bills) {
+  return bills.filter((noNull) => noNull.member !== null)
+  .map((memberName) => memberName.member.name)
+  .reduce((acc, cur) => {
+    if (!acc.includes(cur)) {
+      acc.push(cur);
+    } 
+    return acc;
+  }, []).length;
+}
+
+
+const totalMembers = (noNullBills(bills));
+console.log(totalMembers)

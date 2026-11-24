@@ -373,6 +373,21 @@ const bills = [
     },
 ];
 
-// Start coding here
 
-const totalPaidByLocation;
+/*
+1.ใช้ filter หาแต่ละจังหวัด
+2.ใช้ reduce หาผลรวม
+3.return ไปเก็บไว้ใน object
+*/
+// Start coding here
+let totalPayLocation = bills.reduce((acc, cur) => {
+    if (acc[cur.location]) {
+        acc[cur.location] += cur.total;
+    }else {
+        acc[cur.location] = cur.total;
+    }
+    return acc
+}, {});
+
+const totalPaidByLocation = totalPayLocation;
+console.log(totalPaidByLocation);
