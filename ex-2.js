@@ -373,7 +373,6 @@ const bills = [
   },
 ];
 
-// Start coding here
 function noNullBills(bills) {
   return bills.filter((noNull) => noNull.member !== null)
 }

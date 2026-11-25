@@ -379,7 +379,7 @@ const bills = [
 2.ใช้ reduce หาผลรวม
 3.return ไปเก็บไว้ใน object
 */
-// Start coding here
+
 let totalPayLocation = bills.reduce((acc, cur) => {
     if (acc[cur.location]) {
         acc[cur.location] += cur.total;

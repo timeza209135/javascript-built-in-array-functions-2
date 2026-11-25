@@ -8,9 +8,9 @@ function searchCrimeRecord(name) {
   }
 }
 
-//ผลลัพธ์ที่ควรได้จาก Example case
-//ในกรณีที่ไม่เคยมีประวัติเกี่ยวกับอาชญากรรม
+// ผลลัพธ์ที่ควรได้จาก Example case
+// กรณีที่ไม่เคยมีประวัติเกี่ยวกับอาชญากรรม
 console.log(searchCrimeRecord("Dilan Sandra")); //"Dilan Sandra has no crime record"
 
-//ในกรณีที่เคยมีประวัติเกี่ยวกับอาชญากรรม
+// กรณีที่เคยมีประวัติเกี่ยวกับอาชญากรรม
 console.log(searchCrimeRecord("Tinashe Benigno")); //"Tinashe Benigno has crime record !!!"
